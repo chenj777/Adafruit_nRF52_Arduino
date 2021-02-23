@@ -217,7 +217,7 @@
       "maintainer": "Adafruit",
       "platforms": [
         {
-          "name": "Adafruit nRF52",
+          "name": "BST Nuwa nRF52",
           "architecture": "nrf52",
           "version": "0.21.0",
           "category": "Adafruit",
@@ -230,25 +230,7 @@
           },
           "boards": [
             {
-              "name": "Adafruit Feather nRF52832"
-            },
-            {
-              "name": "Adafruit Feather nRF52840 Express"
-            },
-            {
-              "name": "Adafruit Feather nRF52840 Sense"
-            },
-            {
-              "name": "Adafruit Circuit Playground Bluefruit"
-            },
-            {
-              "name": "Adafruit Metro nRF52840 Express"
-            },
-            {
-              "name": "Adafruit ItsyBitsy nRF52840"
-            },
-            {
-              "name": "Adafruit CLUE"
+              "name": "BST Appboard 3.0(Nuwa)"
             }
           ],
           "toolsDependencies": [
