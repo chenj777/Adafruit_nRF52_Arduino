@@ -443,6 +443,51 @@ pca10056.menu.debug.l3=Level 3 (Segger SystemView)
 pca10056.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 pca10056.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 
+
+# ----------------------------------
+# BST Appboard3.0  (nuwa)
+# ----------------------------------
+nuwa.name=BST Appboard3.0 (nuwa)
+nuwa.bootloader.tool=bootburn
+
+# Upload
+nuwa.upload.tool=nrfutil
+nuwa.upload.protocol=nrfutil
+nuwa.upload.use_1200bps_touch=true
+nuwa.upload.wait_for_upload_port=true
+nuwa.upload.maximum_size=815104
+nuwa.upload.maximum_data_size=237568
+
+# Build
+nuwa.build.mcu=cortex-m4
+nuwa.build.f_cpu=64000000
+nuwa.build.board=NRF52840_PCA10056
+nuwa.build.core=nRF5
+nuwa.build.variant=nuwa
+nuwa.build.usb_manufacturer="Nordic"
+nuwa.build.usb_product="nRF52840 DK"
+nuwa.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+nuwa.build.ldscript=nrf52840_s140_v6.ld
+nuwa.build.vid=0x239A
+nuwa.build.pid=0x8029
+
+# SofDevice Menu
+nuwa.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+nuwa.menu.softdevice.s140v6.build.sd_name=s140
+nuwa.menu.softdevice.s140v6.build.sd_version=6.1.1
+nuwa.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+nuwa.menu.debug.l0=Level 0 (Release)
+nuwa.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+nuwa.menu.debug.l1=Level 1 (Error Message)
+nuwa.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+nuwa.menu.debug.l2=Level 2 (Full Debug)
+nuwa.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+nuwa.menu.debug.l3=Level 3 (Segger SystemView)
+nuwa.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+nuwa.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
 # ----------------------------------
 # Particle Xenon
 # ----------------------------------
